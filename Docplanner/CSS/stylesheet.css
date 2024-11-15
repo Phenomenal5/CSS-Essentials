@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #ababab;
+    line-height: 1.5;
+    background-color: #fff;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    /* width: 1440px; */
+} 
+
+header nav .logo img {
+    width: 268px;
+    height: 33px;
+}
+
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    padding: 15px 0;
+    justify-content: space-evenly;
+
+}
+
+header nav .navbar {
+    display: flex;
+    align-self: center;
+}
+
+header nav ul li {
+    display: inline;
+    list-style: none;
+    font-size: 1rem;
+    ;
+    a {
+        color: #ababab;
+        margin-left: 10px;
+        text-decoration: none;
+    }
+    #about{
+        color: #00b39b;
+    }
+}
+
+.main1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    .logo{
+        width: 40px;
+        height: 40px;
+    }
+    h1 {
+        color: #00b39b;
+        margin: 2rem 0;
+        font-weight: 100;
+    }
+    .main1p {
+        display: flex;
+        margin: 0 auto;
+        gap: 2rem;
+        padding-left: 260px;
+        padding-right: 280px;
+    }
+}
+
+.main2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 30px;
+    margin: 2rem 0;
+    .main2box{
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        color: #fff;
+        min-width: 280px;
+        max-width: 280px;
+        min-height: 320px;
+        max-height: 320px;
+        padding: 2.5rem 2.5rem 0;
+        
+        img{
+            width: 25px;
+            height: 25px;
+        }
+        h2 {
+            margin: 10px 0;
+            font-weight: lighter;
+            font-size: 1.8rem;
+        }
+        p {
+            font-weight: 1px;
+            font-size: 1.2rem;
+            height: 9rem;
+        }        
+        .selectbox {
+            align-self: center;
+            width: 100%;
+            margin-bottom: 1.4rem;
+        }
+    }
+    select{
+        font-size: 1.5rem;
+        text-align: center;
+        color: #fff;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px #fff solid;
+        width: 100%;
+    }
+    .m2-1 {
+        background-color: #00b39b;
+        select {
+            background: #00b39b;
+        }
+    }
+    .m2-2 {
+        background-color: #3d83df;
+        select {
+            background: #3d83df;
+            
+        }
+    }
+    .m2-3 {
+        background-color: #1b2734;
+        select {
+            background: #1b2734;
+        }
+    }
+}
+
+.main3 {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 6rem;
+    padding: 0 12rem;
+    margin-bottom: 3rem;
+    .main3box1 {
+        color: #00b39b;
+        font-size: 1.5rem;
+        height: 100%;
+    }
+    .main3box2 {
+        img {
+            width: 7.5rem;
+            padding: 20px 30px;
+        }  
+    }
+     
+}
+
+.main4 {
+    background: #d0faf4;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+    padding: 55px 60px 0px 60px;
+    .m4-b1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        width: 450px;
+        h2 {        
+            width: 100%;
+            color: #00b39b;
+            font-size: 1.9rem;
+            font-weight: 100;
+            margin: 25px;
+            padding: 0 18px;
+        }
+        .logo {
+            align-self: flex-start;
+            width: 400px;
+            height: 330px;
+        }
+        p {
+            text-wrap: wrap;
+            width: 100%;
+            padding: 1.2rem 1.8rem 2.5rem 2.2rem;
+        }
+
+    }
+    .m4-b2 {
+        display: flex;
+        flex-direction: row;
+        gap: 2.5rem;
+        width: 450px;
+        h2 {        
+            width: 100%;
+            color: #00b39b;
+            font-size: 1.9rem;
+            font-weight: 100;
+            margin: 25px;
+            padding: 0 18px;
+        }
+        img {
+            margin-top: 2rem;
+            width: 25px;
+            height: 29px;
+        }
+        .main4box1 {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            align-self: flex-end;
+            margin-bottom: 5rem;
+        }
+        .main4box2 {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+    }
+    
+    
+    
+    .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        width: 220px;
+        height: 240px;
+        background-color: #fff;
+        h2 {   
+            margin-top: 0.5rem;     
+            width: 100%;
+            color: #00b39b;
+            font-size: 1.5rem;
+            font-weight: 100;
+            text-align: center;
+        }
+        p {
+            text-align: center;
+            padding-bottom: 2rem;
+            font-size: 0.701rem;
+        }
+    }
+}
+
+.main5 {
+    text-align: center;
+    margin: 4rem auto 1rem;
+    h2 {
+        color: #00b39b;
+        font-size: 1.8rem;
+        font-weight: 100;
+    }
+    p {
+       padding: 1rem 0;
+       font-weight: 100;
+    }
+}
+
+.main6 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.4rem;
+    margin: 5rem 11rem;
+    .countryfooter {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 1rem 0.5rem;
+        button{
+            color: #fff;
+            background: #3d83df;
+            padding: 0.6rem;
+            border: #3d83df;
+            border-radius: 5px;
+            
+        }
+        button:hover:{
+            cursor: pointer;
+        }
+    }
+    .countries:hover {
+        box-shadow: 0px 0px 20px #1b2734;
+    }
+    
+    
+}
+
+.main7 {
+    text-align: center;
+    h1 {
+        padding: 0.8rem;
+        font-size: 2rem;
+        font-weight: 100;
+    }
+    button{
+        color: #fff;
+        background: #3d83df;
+        padding: 0.8rem;
+        border: #3d83df;
+        border-radius: 5px;
+    }
+
+}
+
+footer {
+    text-align: center;
+    margin: 5rem 5rem 2rem;
+    p {
+        font-size: 0.8rem;
+        margin-top: 1.5rem;
+        a {color: #3d83df;
+            text-decoration: none;
+        }
+    }
+}
+
+button:hover {
+    cursor: pointer;
+}

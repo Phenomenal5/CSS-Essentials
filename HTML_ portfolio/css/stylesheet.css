@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.main {
+    padding: 0 1.5rem;
+    margin-top: 5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    height: auto;
+    background: aliceblue;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+nav {
+    padding: 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(66, 10, 10);
+    width: 100%;
+    .logo {
+        align-self: flex-start;
+        font-size: 3rem;
+        margin-left: 1.5rem;
+    }
+    .rightbar {
+        margin-right: 1.5rem;
+        a {
+            color: #fff;
+            padding: 1rem;
+            font-size: 1.5rem;
+            font-style: italic;
+            height: 100%;
+        }
+        a:hover {
+            background: #58e258;
+            color: black;
+            box-shadow: 0px 0px 20px #ababab;
+        }
+    }
+     
+}
+
+#home {
+    display: flex;
+    flex-direction: row;
+    margin: 0 3rem 2rem;
+    align-items: center;
+    justify-content: center;
+    .intro {
+        
+        h1{
+            font-size: 4rem;
+            padding: 1rem;
+        }
+    }
+}
+
+#about {
+    padding: 0 1.5rem;
+    h1 {
+        margin: 1rem 0;
+    }
+}
+
+#work {
+    padding: 0 1.5rem;
+    h1 {
+        margin: 1rem 0;
+    }
+    .workbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+#resume {
+    p{
+        text-align: center;
+    }
+}
+
+form {
+    fieldset {
+        margin: 0 auto;
+        border: 1px solid black;
+        border-radius: 10px;
+        /* margin-left: 1.5rem; */
+        width: 80%;
+        height: 500px;
+        label {
+            text-align: center;
+            display: block;
+            font-size: 1.5rem;        
+        }
+        input {
+            display: block;
+            margin: 0 auto;
+            padding: 0.8rem;
+            border-radius: 5px;
+            width: 80%;
+            font-size: 0.9rem;
+        }
+        #submit {
+            color: #fff;
+            margin: 0 50%;
+            font-size: 1.5rem;
+            padding: 1rem;
+            background: rgb(66, 10, 10);
+
+        }
+        #submit:hover {
+            cursor: pointer;
+            background: #58e258;
+            color: black;
+        }
+    }
+    
+    
+
+}
+
+footer {
+    text-align: center;
+    color: #ababab;
+}
+
+hr {
+    margin: 1.5rem 0;
+}
