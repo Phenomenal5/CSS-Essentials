@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <link rel="stylesheet" href="./css/stylesheet.css" type="text/css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="./css/stylesheet.css" type="text/css"/>
 </head>
 <body>
     <div class="container">
         <!--Nav bar-->
         <nav> 
             <div class="logo">
-                <a href="index.html"><i>&#x2705;</i></a>
+                <img src="./res/Cradle_CFD_logo.png" alt="">
             </div>
             <div class="rightbar">
                 <a href="index.html">Home</a>
@@ -23,28 +24,48 @@
         </nav>
         <!--Contact section-->
         <section id="contact">
-            <h1>Contact us</h1>
-
-            <form action="">
-            <fieldset>
-                <legend>For more inquiry</legend>
-                    <label for="name">Full Name:</label>
-                    <input type="text"/>
-                    <br/><br/>
-                    <label for="email">Email:</label>
-                    <input type="email" placeholder="youremail@gmail.com"/>
-                    <br/><br/>
-                    <label for="phone no.">Phone no:</label>
-                    <input type="text"/>
-                    <br/>
-                    <button id="submit" type="submit" value="Send">Send</button>
-                </fieldset>
-            </form>
+            <span>Feel free to reach out for any inquiries or collaborations.</span>
+                <form action="">
+                <fieldset>
+                    <legend>For more inquiry</legend>
+                        <label for="name">Full Name:</label>
+                        <input type="text" placeholder="Surname   First Name   Other Names" required/>
+                        <label for="email">Email:</label>
+                        <input type="email" placeholder="youremail@gmail.com" required/>
+                        <label for="phone no.">Phone no:</label>
+                        <input type="text" placeholder="(+123)813 456 7389" required/>
+                        <button id="submit" type="submit" value="Send">Send</button>
+                    </fieldset>
+                </form>
+                <div class="info">
+                    <h1>Contact Details:</h1>
+                    <div class="contact_info">
+                        <div class="address">
+                            <p><b>Location:</b> FCT Abuja, Nigeria</p>
+                            <p><b>Email:</b> <a href="mailto:jimbaabdullahi9@gmail.com">jimbaabdullahi9@gmail.com</a></p>
+                            <p> <b>Phone:</b><a href="tel:+2348107780460"> +234 810 778 0460</a></p>
+                            <p><b>Whatsapp:</b><a href="tel:+2347013054426"> +234 701 3054 426</a></p>
+                        </div>
+                        
+                        <!-- map -->
+                        <div class="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126093.7824428987!2d7.367465084910532!3d9.024416368328325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e745f4cd62fd9%3A0x53bd17b4a20ea12b!2sAbuja%2C%20Federal%20Capital%20Territory!5e0!3m2!1sen!2sng!4v1742150466646!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    <!-- socials -->
+                    <div class="socials">
+                        <a href="#"><img src="./res/linkedin-logo_4096186.png" alt=""> Linkedin</a>
+                        <a href="#"><img src="./res/twitter-alt-square_12107611.png" alt=""> twitter</a>
+                        <a href="#"><img src="./res/instagram_2111463.png" alt=""> Instagram</a>
+                        <a href="#"><img src="./res/facebook_5968764.png" alt="">Facebook</a>
+                    </div>
+                </div>
         </section>
-    </div>
-    <!--Footer-->
+        <!--Footer-->
     <footer>
         <small>Copyright &copy;2024 Jimba Abdullahi. All rights reserved.</small>
     </footer>
+    </div>
+    
 </body>
 </html>

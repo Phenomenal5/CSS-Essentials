@@ -10,8 +10,9 @@ body {
     line-height: 1.5;
 }
 .main {
-    padding: 0 1.5rem;
-    margin-top: 5rem;
+    min-height: 100vh;
+    background: url(../res/background.jpg) no-repeat center;
+    background-size: cover;
 }
 
 a {
@@ -19,8 +20,8 @@ a {
 }
 
 .container {
-    height: 100vh;
-    background: rgba(128, 128, 128, 0.5);;
+    min-height: 100vh;
+    background: rgba(128, 128, 128, 0.5);
 }
 
 h1 {
@@ -28,18 +29,23 @@ h1 {
 }
 
 nav {
-    padding: 0.2rem;
+    padding: 0.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: linear-gradient(gray,rgba(0, 0, 0, 0.6));
     width: 100%;
     .logo {
+        align-content: centers;
+        height: 100%;
         align-self: flex-start;
-        font-size: 3rem;
-        margin-left: 1.5rem;
+        img{;
+            border-radius: 100%;
+            width: 4rem;
+        }
     }
     .rightbar {
+        justify-content: center;
         margin-right: 1.5rem;
         a {
             color: #fff;
@@ -56,13 +62,60 @@ nav {
     }
 }
 
-#home {
+.nav {
+    padding: 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    .logo {
+        align-self: flex-start;
+        margin-left: 1.5rem;
+        img{
+            width: 5rem;
+            border-radius: 100%;
+        }
+    }
+    .rightbar {
+        margin-right: 1.5rem;
+        a {
+            color: #fff;
+            padding: 1rem;
+            font-size: 1.5rem;
+            font-style: italic;
+            height: 100%;
+        }
+        a:hover {
+            background-color: #ababab;
+            color: black;
+            box-shadow: 0px 0px 20px #ababab;
+            border-radius: 100%;
+        }
+    }
+}
+
+.hero {
     display: flex;
     flex-direction: row;
-    margin: 0 3rem 2rem;
+    background-size: cover;
+    height: 100vh;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto;
+    .aircraft{
+        align-content: center;
+        height: 100%;
+        margin: 0 2rem;
+        img{
+            width: 100%;
+            border-radius: 100%;
+        }
+    }
     .intro {
+        text-align: center;
+        color: #ababab;
+        font-size: 1.8rem;
         h1{
             font-size: 4rem;
             padding: 1rem;
@@ -75,78 +128,153 @@ nav {
     h1 {
         margin: 1rem 0;
     }
+    img {
+        width: 20%;
+        padding: 0 1rem;
+        float: left;
+    }
+    .paragraph{
+        font-size: 2rem;
+    }
 }
 
 #work {
     padding: 0 1.5rem;
+    margin: 0 1rem;
     h1 {
         margin: 1rem 0;
     }
     .workbox {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        margin: 2rem 0;
+        img{
+            width: 50%;
+        }
+        .media3{
+            display: flex;
+            flex-direction: row;
+        }
+        .model{
+            display: flex;
+            justify-content: center;
+            img{
+                margin: 1rem;
+            }
+        }
     }
 }
 
 #resume {
+    h1{
+        
+    }
     p{
         text-align: center;
     }
 }
 
-form {
-    fieldset {
-        margin: 0 auto;
-        border: 1px solid black;
-        border-radius: 10px;
-        width: 80%;
-        height: 500px;
-        label {
-            text-align: center;
-            display: block;
-            font-size: 1.5rem;        
+#contact {
+    position: relative;
+    color: #353131;
+    margin: 2rem auto;
+    span{
+        margin: 2rem;
+        font-size: 1rem;
+    }
+    .info{
+        color: #353131;
+        background-color: #35313121;
+        height: 100%;
+        h1{
+            font-size: 2rem;
+            margin: 1.5rem;
         }
-        input {
-            display: block;
+        .contact_info{
+            width: 90%;
             margin: 0 auto;
-            padding: 0.8rem;
-            border-radius: 5px;
-            width: 80%;
-            font-size: 0.9rem;
-        }
-        #submit {
-            color: #fff;
-            margin: 0 50%;
-            font-size: 1.5rem;
-            padding: 1rem;
-            background: rgba(0, 0, 0, 0.5);
-            border-radius: 10%;
-        }
-        #submit:hover {
-            cursor: pointer;
-            background: rgba(0, 0, 0, 0.7);
-            color: black;
-            border-radius: 15%;
-        }
-        #submit:active {
-            background: rgba(0, 0, 0, 0.5);
-            color: white;
-            border-radius: 10%;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            .address{
+                margin: auto 0;
+                p{
+                    padding: 0.5rem;
+                    font-size: 1.3rem;
+                    a{
+                        color: #353131;
+                    }
+                }
+            }
+            .map{
+                margin: 1rem 0;
+            }
         }
     }
-    
-    
-
+    form {
+        margin: 2rem 0;
+        fieldset {
+            margin: 0 auto;
+            border: 1px solid black;
+            border-radius: 10px;
+            width: 40%;
+            legend{
+                margin: 0 1rem;
+                font-style: italic;
+            }
+            label {
+                padding: 1rem;
+                display: block;
+                font-size: 1.5rem;        
+            }
+            input {
+                display: block;
+                margin: 0 auto;
+                background: rgba(128, 128, 128, 0);
+                padding: 0.8rem;
+                width: 85%;
+                font-size: 0.9rem;
+            }
+            #submit {
+                color: #fff;
+                margin: 1rem 45%;
+                font-size: 1.5rem;
+                padding: 1rem;
+                background: rgba(0, 0, 0, 0.5);
+                border-radius: 10%;
+            }
+            #submit:hover {
+                cursor: pointer;
+                background: radial-gradient(gray,rgba(0, 0, 0, 0.774));
+                color: black;
+                border-radius: 15%;
+                transform: translateY(-3px);
+            }
+            #submit:active {
+                background: rgba(0, 0, 0, 0.5);
+                color: white;
+                border-radius: 10%;
+                transform: translateY(0px);
+            }
+        }
+    }
+    .socials{
+        width: 100%;
+        text-align: right;
+        font-style: italic;
+        font-size: medium;
+        a{
+            margin: 0 0.8rem;
+            img{
+                width: 1rem;
+            }
+        }
+    }
 }
 
 footer {
+    padding: 0.5rem;
     width: 100%;
     text-align: center;
     color: #ababab;
     background: rgba(0, 0, 0, 0.5);
-}
-
-hr {
-    margin: 1.5rem 0;
 }
