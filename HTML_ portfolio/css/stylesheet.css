@@ -1,3 +1,6 @@
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -5,15 +8,16 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
     font-size: 18px;
+    font-variation-settings: 
+    "wdth" 100;
+    font-weight: <weight>;
+    font-optical-sizing: auto;
     line-height: 1.5;
 }
-.main {
-    min-height: 100vh;
-    background: url(../res/background.jpg) no-repeat center;
-    background-size: cover;
-}
+
 
 a {
     text-decoration: none;
@@ -22,6 +26,73 @@ a {
 .container {
     min-height: 100vh;
     background: rgba(128, 128, 128, 0.5);
+    .main {
+        min-height: 100vh;
+        background: url(../res/background.jpg) no-repeat center;
+        background-size: cover;
+        #home{
+            padding-top: 1rem;
+            .nav {
+                padding: 0.2rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                .logo {
+                    align-self: flex-start;
+                    margin-left: 1.5rem;
+                    img{
+                        width: 5rem;
+                        border-radius: 100%;
+                    }
+                }
+                .rightbar {
+                    margin-right: 1.5rem;
+                    a {
+                        color: #fff;
+                        padding: 1rem;
+                        font-size: 1.5rem;
+                        font-style: italic;
+                        height: 100%;
+                    }
+                    a:hover {
+                        background-color: #ababab;
+                        color: black;
+                        box-shadow: 0px 0px 20px #ababab;
+                        border-radius: 100%;
+                    }
+                }
+            }
+            .hero {
+                display: flex;
+                flex-direction: row;
+                background-size: cover;
+                height: 100vh;
+                align-items: center;
+                justify-content: space-around;
+                width: 90%;
+                margin: 0 auto;
+                .aircraft{
+                    align-content: center;
+                    height: 100%;
+                    margin: 0 2rem;
+                    img{
+                        width: 100%;
+                        border-radius: 100%;
+                    }
+                }
+                .intro {
+                    text-align: center;
+                    color: #ababab;
+                    font-size: 1.8rem;
+                    h1{
+                        font-size: 4rem;
+                        padding: 1rem;
+                    }
+                }
+            }
+        }
+    }
 }
 
 h1 {
@@ -62,66 +133,9 @@ nav {
     }
 }
 
-.nav {
-    padding: 0.2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    .logo {
-        align-self: flex-start;
-        margin-left: 1.5rem;
-        img{
-            width: 5rem;
-            border-radius: 100%;
-        }
-    }
-    .rightbar {
-        margin-right: 1.5rem;
-        a {
-            color: #fff;
-            padding: 1rem;
-            font-size: 1.5rem;
-            font-style: italic;
-            height: 100%;
-        }
-        a:hover {
-            background-color: #ababab;
-            color: black;
-            box-shadow: 0px 0px 20px #ababab;
-            border-radius: 100%;
-        }
-    }
-}
 
-.hero {
-    display: flex;
-    flex-direction: row;
-    background-size: cover;
-    height: 100vh;
-    align-items: center;
-    justify-content: space-around;
-    width: 90%;
-    margin: 0 auto;
-    .aircraft{
-        align-content: center;
-        height: 100%;
-        margin: 0 2rem;
-        img{
-            width: 100%;
-            border-radius: 100%;
-        }
-    }
-    .intro {
-        text-align: center;
-        color: #ababab;
-        font-size: 1.8rem;
-        h1{
-            font-size: 4rem;
-            padding: 1rem;
-        }
-    }
-}
+
+
 
 #about {
     padding: 0 1.5rem;
